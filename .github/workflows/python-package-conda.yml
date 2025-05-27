@@ -23,6 +23,6 @@ jobs:
 
       - name: Run weather script
         env:
-          WEATHER_API_KEY: ${{ secrets.Weather_api }}
+          Weather_api: ${{ secrets.Weather_api }}
         run: |
           python main.py
