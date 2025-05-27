@@ -2,7 +2,7 @@ import requests
 import os
 
 def get_weather(city):
-    api_key = ${{ secrets.Weather_api }}  # Uses environment variable
+    api_key = os.getenv("Weather_api")  # Uses environment variable
     if not api_key:
         raise Exception("API key not found in environment variables.")
 
